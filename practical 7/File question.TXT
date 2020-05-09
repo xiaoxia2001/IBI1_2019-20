@@ -1,0 +1,4 @@
+question: How has total cases developed over time in China?
+line number: 64-74
+result discussion:
+  We get an inverse z-shaped curve.From this curve, we can conclude that the growth of total cases in China was slow at the beginning, followed by an outbreak period with rapid growth, and then slowed down again under the control of effective measures taken by the government.
