@@ -1,0 +1,9 @@
+findings:
+between Sequence for human SOD2 protein and Sequence of a mouse SOD2 protein : 
+BLOSUM62 score: 1091     edit_distance: 23  rate: 10.22%
+between Sequence for human SOD2 protein and A random sequence
+BLOSUM62 score: -250     edit_distance: 210  rate: 93.33%
+between Sequence of a mouse SOD2 protein and A random sequence
+BLOSUM62 score: -250   edit_distance:209  rate: 92.89%
+interpretation:
+We can see that when BLOSUM62 score is positive, the two sequences are similar, and when BLOSUM62 score is negative, the two sequences are not similar.The larger the edit_distance, the higher the degree of dissimilarity.I calculated the BLOSUM62 score and edit_distance between the three sequences by Alignment. Py.I found that the BLOSUM62 score between the human sequence and mouse sequence was positive, and the edit_distance and edit_distance rates were both small, indicating that the two sequences were relatively similar.The BLOSUM62 score of the human sequence, mouse sequence and random sequence were both negative, and the edit_distance and edit_distance rates were both large, indicating that the two sequences were not very similar to the random sequence.
