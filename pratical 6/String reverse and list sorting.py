@@ -7,7 +7,7 @@ Created on Thu Mar 19 23:48:37 2020
 
 #import the length
 gene_lengths=[9410,3944141,4442,105338,19149,76779,126550,36296,842,15981]
-gene_lengths1=sorted(gene_lengths)
+gene_lengths1=sorted(gene_lengths)#sort the list
 #following the guide,we need to delete the maximum and the minimum
 del(gene_lengths1[9])
 del(gene_lengths1[0])

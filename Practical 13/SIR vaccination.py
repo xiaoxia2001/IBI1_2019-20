@@ -54,7 +54,7 @@ inf_line10 = plt.plot(Infected[10], label='100%', color=cm.viridis(33))
 plt.legend()
 plt.xlabel('Time')
 plt.ylabel('Number of people')
-plt.title('SIR model with different vaccination rate')
-plt.savefig('SIR model with different vaccination rate', type='png')
+plt.title('SIR model with different vaccination rate')#name the plot
+plt.savefig('SIR model with different vaccination rate', type='png')#save the plot
 plt.show()
 plt.close()

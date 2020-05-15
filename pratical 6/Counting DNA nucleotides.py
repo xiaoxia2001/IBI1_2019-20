@@ -4,29 +4,29 @@ Created on Thu Mar 19 23:32:31 2020
 
 @author: 86133
 """
-
+#set variables
 A0 = 0
 C0 = 0
 G0 = 0
 T0 = 0
 genes = {}
 DNA = 'ATGCTTCAGAAAGGTCTTACG'
-for i in DNA:
+for i in DNA:#count(A)
     if i == 'A':
         A0 += 1
-genes['A']=A0
-for i in DNA:
+genes['A']=A0#store in genes
+for i in DNA:#count(C)
     if i =='C':
         C0 += 1
-genes['C']=C0
-for i in DNA:
+genes['C']=C0#store in genes
+for i in DNA:#count(G)
     if i == 'G':
         G0 +=1
-genes['G']=G0
-for i in DNA:
+genes['G']=G0#store in genes
+for i in DNA:#count(T)
     if i == 'T':
         T0 +=1
-genes['T']=T0
+genes['T']=T0#store in genes
 print(genes)
 #start making plot
 import matplotlib.pyplot as plt

@@ -5,22 +5,23 @@ Created on Thu May 14 11:45:23 2020
 @author: 86133
 """
 
+#import neccessary libraries
 import re
 import sys
 import copy
-judge = True; c = float(); R = []; result = False; num_float = [];count = 0
+judge = True; c = float(); R = []; result = False; num_float = [];count = 0#define the type of variables
 origin = input('''Please input numbers to compute 24:(use ',' to divide them)
-''')
-nums = re.split(',', origin)
+''')#give the place to input origin number
+nums = re.split(',', origin)#split the number by ','
 for item in nums:
     num_float.append(float(item))
-for n in range(len(nums)):
+for n in range(len(nums)):# the number of origin numbers between 1 and 23
     if int(nums[n]) >= 24 or int(nums[n]) < 1:
         judge = False
 if judge == False:
-    print('The input numbers must be integers from 1 to 23')
-else:
-    def operation(a,b,op):
+    print('The input numbers must be integers from 1 to 23')#print the error reason
+else:#run the game of 24 points
+    def operation(a,b,op):#doing different notations
         global c,count
         if op == 1:
             c = a + b
@@ -38,13 +39,13 @@ else:
                c = str(1)
             else:
                c = b/a
-        if c == 24.0:
+        if c == 24.0:#finish the game of 24 points
             count += 1
             print('Yes')
             print('Recursion times:',count)
             sys.exit()
         else:
-            return c
+            return c#not finish
     def cal(L):
         global c,count
         if len(L) == 1:
@@ -75,4 +76,4 @@ else:
         print('Yes')
     else:
         print('No')
-    print('Recursion times:',count)
+    print('Recursion times:',count)#print the recursion times

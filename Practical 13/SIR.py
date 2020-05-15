@@ -40,5 +40,5 @@ rec_line = plt.plot(Recovered, label='Recovered')
 plt.legend()
 plt.xlabel('Time')
 plt.ylabel('Number of people')
-plt.title('SIR model')
-plt.savefig('SIR model',type='png')
+plt.title('SIR model')#name the plot
+plt.savefig('SIR model',type='png')#save the plot

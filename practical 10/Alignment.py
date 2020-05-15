@@ -4,16 +4,16 @@ Created on Wed May 13 09:42:01 2020
 
 @author: 86133
 """
-
+#import neccessay libraries
 import re
 import os
 import pandas as pd
-os.chdir('C:\\Users\\86133\\Desktop\IBI1_2019-20\practical 10')
-MG= open('SOD2_mouse.fa')
+os.chdir('C:\\Users\\86133\\Desktop\IBI1_2019-20\practical 10')#change the directories
+MG= open('SOD2_mouse.fa')#open the files
 HG= open('SOD2_human.fa')
 RG= open('RandomSeq.fa')
 BM= pd.read_csv("BLOSUM62 matrix.csv")
-score= 0
+score= 0#define the score
 #human-mouse
 import re
 MG1 = []
@@ -38,6 +38,7 @@ lseq2 = len(seq2)
 print(lseq1)
 edit_distance = 0 
 if lseq1 >= lseq2:
+    #define the dictionary of scores
     for i in range(len(seq1)):
         if seq1[i] == 'A':
             a = 0

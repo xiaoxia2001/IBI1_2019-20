@@ -4,7 +4,7 @@ Created on Sun May 10 17:17:31 2020
 
 @author: 86133
 """
-
+#let users input the file
 filename = input('filename:')
 #open the file
 gene = open('filename','r')
@@ -41,9 +41,9 @@ for n in range(count):
         rev_seq[n] +=comp_dict[i]#Complementary matching
         rev_seq[n] = rev_seq[n][::-1]#Reverse order
         rev_seq.append(rev_seq[n])
-xfile = open('reverse complementary sequences.fa','w')
+xfile = open('reverse complementary sequences.fa','w')#create a file and write
 for n in range(count):
-    a = '\n'+'>'+seqName[n] + '       ' + str(len(rev_seq[n])) + '\n'+rev_seq[n]
+    a = '\n'+'>'+seqName[n] + '       ' + str(len(rev_seq[n])) + '\n'+rev_seq[n]#putting gene name and gene length
     xfile.write(a)
 gene.close
 xfile.close

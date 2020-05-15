@@ -5,10 +5,10 @@ Created on Thu Mar 19 17:01:39 2020
 @author: 86133
 """
 import random
-x = random.randint(1,8192)
+x = random.randint(1,8192)#randomly import a number
 x1 = x
 print(x,"is",sep=" ",end="")
-for i in range(0,14):
+for i in range(0,14):#calculate the sum of power of 2
     j = 13 - i
     if x > 2 **j:
         print("2**",j,sep=" ",end="") 

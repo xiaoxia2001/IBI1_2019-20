@@ -10,11 +10,11 @@ n = 100
 while n !=1:
     
     #list two situations
-    if n%2 == 0:
+    if n%2 == 0:#n is even
        n=n/2
        print(n)
    
-    elif n % 2 ==1:
+    elif n % 2 ==1:#n is odd
        n = 3*n+1
        print(n)
        
